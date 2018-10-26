@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CoomoTravel</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Avenir fonts -->
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/landing_page.css">
+    <!-- Reject CSS (Warning message on old browsers IE5, IE6 etc...) -->
+    <link rel="stylesheet" href="https://lib.arvancloud.com/ar/jReject/1.1.4/css/jquery.reject.css">
+    <!-- Animate CSS for animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <!-- International Telephone Input -->
+    <link rel="stylesheet" href="vendors/intl-tel-input/css/intlTelInput.min.css">
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <![endif]-->
+    <style>
+        .close{
+            border-radius: 100% !important;
+            width: 30px !important;
+            height: 30px !important;
+            opacity: 1 !important;
+            margin-left: 0px !important;
+            background-color: white !important;
+        }
+        .close>span{
+            color: #5491E3;
+        }
+        .modal-header .close {
+            padding: 0rem 0rem 0rem 0px;
+             margin: 0rem 0rem 0rem auto; 
+        }
+        .modal-header {
+            border: 0px !important;
+        }
+        .modal-footer {
+            border: 0px !important;
+            display: block !important;
+        }
+        .modal-content {
+            position: relative;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            width: 100%;
+            pointer-events: auto;
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#73afdc+0,73afdc+1,178ce5+45,178ce5+88,178ce5+88,1181d6+100,a7c7dc+100,1181d6+100,a7c7dc+100 */
+            background: #73afdc; /* Old browsers */
+            background: -moz-linear-gradient(45deg, #73afdc 0%, #73afdc 1%, #178ce5 45%, #178ce5 88%, #178ce5 88%, #1181d6 100%, #a7c7dc 100%, #1181d6 100%, #a7c7dc 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(45deg, #73afdc 0%,#73afdc 1%,#178ce5 45%,#178ce5 88%,#178ce5 88%,#1181d6 100%,#a7c7dc 100%,#1181d6 100%,#a7c7dc 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(45deg, #73afdc 0%,#73afdc 1%,#178ce5 45%,#178ce5 88%,#178ce5 88%,#1181d6 100%,#a7c7dc 100%,#1181d6 100%,#a7c7dc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73afdc', endColorstr='#a7c7dc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+                        background-clip: padding-box;
+                        border: 1px solid rgba(0,0,0,.2);
+                        border-radius: .3rem;
+                        outline: 0;
+        }
+        input[type="file"] {
+        display: none;
+        }
+        .custom-file-upload {
+            width: 80px;
+            height: 80px;
+            border: 1px solid #ccc;
+            display: inline-block;
+            cursor: pointer;
+            border-radius: 100%;
+            text-align: center;
+            background-color: white;
+            margin-top: -10px;
+            background-image: url(img/Group%2082.png);
+        }
+        .form-control {
+            display: block;
+            width: 100%;
+            height: calc(2.25rem + 2px);
+            padding: 0.375rem 0.75rem;
+            font-size: 0.8125rem;
+            line-height: 1.5;
+            color: #707070;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            border-radius: .25rem;
+            transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+            font-family: Avenir-Medium;
+        }
+            </style>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+    </div>
+    <p id="excuse" class="pt-5 text-center">Oops! Our Web don't support this kind of screen. Kindly download our native app for this device</p>
+    <div id="main-wrapper">
+        <section class="panel">
+            <div style="position: relative;height: 100%;">
+                <header id="header" class="header">
+                    <ul style="list-style-type: none;margin: 0;padding: 0;overflow: hidden;box-shadow: 0px 11px 16px -7px rgba(185,179,189,1);padding: 13px 16px;">
+                      <li style="float: left;">
+                        <a class="" href="#"><img src="img/logo.png" alt="" width="80%" style="display: block; text-align: center;padding: 6px 16px;text-decoration: none;">
+                        </a>
+                      <li style="float: left;">
+                        <a  href="#" class="btn  plan-a-trip btn-outline-primary btn-lg" style="display: block; text-align: center; padding: 8px 30;text-decoration: none;">
+                            Plan A Trip
+                        </a>
+                    </li>
+                      <li style="float:right"><a class="btn btn-primary btn-get-started get-started" href="#" style="display: block;text-align: center;padding: 6px 16px;text-decoration: none;">
+                        Get Started &nbsp;&nbsp;<i class="fa fa-arrow-right"></i>
+                    </a>
+                </li>
+                      <li style="float:right">
+                        <a class="nav-link login" href="javascript;" data-toggle="modal" data-target="#social-login" style="display: block; color: white;text-align: center;padding: 6px 16px;text-decoration: none;">Login
+                        </a>
+                    </li>
+                    </ul>
+                </header>
+                <div class="wrap">
+                    <div class="row" id="section_first">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-5">
+                            <div class="content_wrapper">
+                                <p class="paragraph-1">Plan and Book your trip All in One Place!</p>
+                                <p class="paragraph-2">While allowing other users to provide recommendations <br>in real time.</p>
+                                <a class="btn btn-primary btn-get-started get-started" href="#">Get Started &nbsp;&nbsp;<i class="fa fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div id="grid">
+                                <div class="item h2"></div>
+                                <div class="item h3"></div>
+                                <div class="item h4"></div>
+                                <div class="item h5 moment-ha-long-img"></div>
+                                <div class="item h6 fixedw-large-img">
+                                    <div class="img-title">Pulpit Rock, <br>Norway</div>
+                                    <a href="#" class="img-link">
+                                <img src="img/Group%2063.png" alt="">
+                                Experience This!
+                        </a>
+                                </div>
+                                <div class="item h6" style="background-image: url(img/1528.png);">
+                                    <div class="img-title">
+                                        Tunnel of Love, <br>Ukraine
+                                    </div>
+                                    <a class="img-link" href="">
+                                <img src="img/Group%2063.png" alt="">
+                                Experience This!
+                        </a>
+                                </div>
+                                <div class="item h6" style="background-image: url(img/DO6Lxg9i-1380x1035.png);">
+                                    <div class="img-title" ">
+                              St. Sebastian’s Church, <br>Ramsau
+                        </div>
+                        <a class=" img-link-white" href="">
+                                        <img src="img/Group%2061.png" alt="">
+                                Experience This!
+                        </a>
+                                    </div>
+                                    <div class="item h7">
+                                        <div class="img-title">
+                                            Barton Springs Pool, <br>Austin TX
+                                        </div>
+                                        <a class="img-link-white" href="">
+                                <img src="img/Group%2061.png" alt="" style="padding: 0px;">
+                                Experience This!
+                        </a>
+                                    </div>
+                                    <div class="item h5" style="background-image: url(img/ScreenShot2018-09-23at9.05.04PM.png);background-size: auto 100%;"></div>
+                                    <div class="item h8" style="background-image: url(img/ScreenShot2018-09-23at9.05.04PM.png);">
+                                        <div class="img-title">
+                                            Namib Desert, <br>Namibia
+                                        </div>
+                                    </div>
+                                    <div class="item h9"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="panel" style="background: #EFEFEF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #EFEFEF, #FFFFFF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #EFEFEF, #FFFFFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+">
+            <div class="row" id="section-two">
+                <div class="col-md-10 offset-2 text-center d-flex flex-wrap align-items-center">
+                    <img src="img/Group%20137.png" alt="" class="detailed-img">
+        </div>
+                </div>
+        </section>
+        <section class="panel d-flex align-items-end" style="background-color:#1D85D5  !important;">
+            <div class="section-three" style="width: 100%;">
+                    <div class="">
+                        <center><img src="img/Group%20138.png" alt="" width="70%" class=""></center>
+                     </div>
+                </div>
+        </section>
+        <div class="row footer">
+            <div class="col-md-12 text-center pt-md-5">
+                <a class="btn btn-primary btn-get-started get-started" href="#">Get Started &nbsp;&nbsp;<i class="fa fa-arrow-right"></i> <!-- <img src="img/XMLID_15_.png" alt=""> --></a>
+                <div class="custom-footer mt-5">
+                    <ul>
+                        <li><a href="">House Rules</a></a></li>
+                        <li><a href="">Photo Policy</a></li>
+                        <li><a href="">Terms of Use</a></li>
+                        <li><a href="">Venue</a></li>
+                        <li><a href="">Photo Policy</a></li>
+                    </ul><br>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap Models -->
+    <!-- 1. Social Media Signup -->
+    <div class="modal" id="social-login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style="width: 100% !important;">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p style="font-size: 30px;text-align: center;color:white;font-family: Avenir-Light;line-height: 30px;">
+                        Login to CooMo
+                    </p>
+                    <div class="row mt-5">
+                        <div class="col-md-6 offset-3">
+                            <button type="button" class="btn btn-light btn-block">
+                                <img src="img/RnOg6UyU_400x400.png" alt="" class="ml-2" style="float: left;width: 29px;;">
+                                <span style="line-height: 2.1;font-size: 15px; font-family: Avenir-Medium;color: #707070;">Sign in with Google</span>
+                            </button>
+                            <button type="button" class="btn btn-light btn-block" style="">
+                                <img src="img/fb_icon_325x325.png" alt="" class="ml-2" style="float: left;width: 31px;">
+                                <span style="line-height: 2.1;font-size: 15px; font-family: Avenir-Medium;color: #707070;">Sign in with Facebook</span>
+                            </button>
+                            <button type="button" class="btn btn-light btn-block" style="">
+                                <img src="img/twitter_512.png" alt="" class="ml-2" style="float: left;width: 31px;">
+                                <span style="line-height: 2.1;font-size: 15px; font-family: Avenir-Medium;color: #707070;color: #707070;">Sign in with Twitter</span>
+                            </button>
+                            <button type="button" class="btn btn-light btn-block" style="">
+                                <img src="img/Group%2074.png" alt="" class="ml-2" style="float: left;width: 31px;">
+                                <span style="line-height: 2.1;font-size: 15px; font-family: Avenir-Medium;color: #707070;">Sign in with Email</span>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="mt-5" style="text-align: center !important;">
+                        <a href="javascript;" style="font-size: 20px;color:white;font-family: Avenir-Medium;font-size: 20px;text-decoration: none;" data-toggle="modal" data-target="#social02" data-dismiss="modal">Need an Account - Sign Up!</a>
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <p style="font-size: 13px; color: white;text-align: center;font-family: Avenir-Medium">Read our <a href="#" style="text-decoration: none;"><span style="font-family: Avenir-Black;font-size: 13px; color: white;">Privacy Policy</span></a> and <a href="#" style="text-decoration: none;"><span style="font-family: Avenir-Black;font-size: 13px; color: white;">Terms of Service</span></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 1. Social Media Signup -->
+    <!-- 2. Social Media Login -->
+    <div class="modal" id="social02" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p style="font-size: 30px;text-align: center;color:white;font-family: Avenir-Light;line-height: 30px;">
+                        Sign Up to CooMo
+                    </p>
+                    <div class="row mt-5">
+                        <div class="col-md-6 offset-3">
+                            <form>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Password">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Confirm Password">
+                                </div>
+                                <div class="form-group text-center m-3">
+                                    <button class="btn btn-outline-light" style="font-size: 20px; font-family: Avenir-Medium;padding: .2rem 2.75rem;" data-toggle="modal" data-target="#social03" data-dismiss="modal">Continue &nbsp; <!-- <img src="img/XMLID_15_.png" alt=""> --></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <p style="text-align: center !important;color:white;font-size: 14px;font-family: Avenir-Medium;">
+                        Already have an Account? <a href="javascript;" style="color:white;font-size: 14px;font-family: Avenir-Black;text-decoration: none;" data-toggle="modal" data-target="#social-login" data-dismiss="modal">Log In</a>
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <p style="font-size: 13px; color: white;text-align: center;font-family: Avenir-Medium">Read our <a href="#" style="text-decoration: none;"><span style="font-family: Avenir-Black;font-size: 13px; color: white;">Privacy Policy</span></a> and <a href="#" style="text-decoration: none;"><span style="font-family: Avenir-Black;font-size: 13px; color: white;">Terms of Service</span></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 3. Social Media info -->
+    <div class="modal" id="social03" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="modal-title" id="exampleModalLabel" style="font-size: 25px;text-align: center;color:white;font-family: Avenir-Light;line-height: 30px;">For 5 CooMo Points, Tell Us More About Yourself</p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p style=""
+                    </p>
+                    <div class="row mt-5">
+                        <div class="col-md-3 text-right">
+                            <label for="file-upload" class="custom-file-upload">
+                            </label>
+                            <input id="file-upload" type="file" />
+                        </div>
+                        <div class="col-md-6">
+                            <form>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Username">
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6" style="padding-right: 5px;">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="First Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6" style="padding-left: 5px;">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Last Name">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Current City">
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 text-center">
+                                        <p style="color: white; text-align: center;font-family: Avenir-Medium;font-size: 13px;">I'd consider myself a city expert on:</p>
+                                    </div>
+                                    <div class="col-md-6" style="padding-left: 5px;">
+                                    <div id="city-group">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter City">
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 text-center">
+                                    </div>
+                                    <div class="col-md-6 text-right" style="padding-left: 5px;">
+                                        <div class="form-group">
+                                            <span style="color: white;">Add City</span>&nbsp;&nbsp;
+                                            <button class="btn btn-sm btn-outline-light" style="border-radius: 100%; padding: 2px 8px;background-color: white;color: #1d85d5;" id="addButton">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group text-center">
+                                    <button class="btn btn-outline-light" style="font-size: 20px; font-family: Avenir-Medium;padding: .3rem 1.75rem;" data-toggle="modal" data-target="#social04" data-dismiss="modal">Proceed to Verification &nbsp; <!-- <img src="img/XMLID_15_.png" alt=""> --></button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-3"></div>
+                    </div>
+                    <p style="font-size: 13px; color: white;text-align: center;font-family: Avenir-Medium">Read our <a href="#" style="text-decoration: none;"><span style="font-family: Avenir-Black;font-size: 13px; color: white;">Privacy Policy</span></a> and <a href="#" style="text-decoration: none;"><span style="font-family: Avenir-Black;font-size: 13px; color: white;">Terms of Service</span></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 4. Verify Your Phone -->
+    <div class="modal" id="social04" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p style="font-size: 25px;text-align: center;color:white;font-family: Avenir-Light;line-height: 30px;">
+                        Verify Your Phone
+                    </p>
+                    <div class="row m-5 mb-5">
+                        <div class="col-md-8 offset-2 mt-5 mb-5">
+                            <form>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="phone" placeholder="Enter Phone" size="50">
+                                </div>
+                                <div class="form-group text-center">
+                                    <button class="btn btn-outline-light" style="font-size: 20px; font-family: Avenir-Medium;padding: .3rem 1.75rem;" data-toggle="modal" data-target="#social05" data-dismiss="modal">Send Code &nbsp; <!-- <img src="img/XMLID_15_.png" alt=""> --></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <p style="font-size: 13px; color: white;text-align: center;font-family: Avenir-Medium">Read our <a href="#" style="text-decoration: none;"><span style="font-family: Avenir-Black;font-size: 13px; color: white;">Privacy Policy</span></a> and <a href="#" style="text-decoration: none;"><span style="font-family: Avenir-Black;font-size: 13px; color: white;">Terms of Service</span></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 5. Verify Your Phone -->
+    <div class="modal" id="social05" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p style="font-size: 25px;text-align: center;color:white;font-family: Avenir-Light;line-height: 30px;">
+                        Verify Your Phone
+                    </p>
+                    <div class="row m-5 mb-5">
+                        <div class="col-md-8 offset-2 mt-5 mb-5">
+                            <form>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="code" placeholder="Enter Code" size="50">
+                                </div>
+                                <div class="form-group text-center">
+                                    <button class="btn btn-outline-light" style="font-size: 20px; font-family: Avenir-Medium;padding: .3rem 1.75rem;" data-toggle="modal" data-target="#social06" data-dismiss="modal">
+                                        Confirm
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <p style="font-size: 13px; color: white;text-align: center;font-family: Avenir-Medium">Read our <a href="#" style="text-decoration: none;"><span style="font-family: Avenir-Black;font-size: 13px; color: white;">Privacy Policy</span></a> and <a href="#" style="text-decoration: none;"><span style="font-family: Avenir-Black;font-size: 13px; color: white;">Terms of Service</span></a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 6. Welcome To CooMo Travel -->
+    <div class="modal" id="social06" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p style="font-size: 25px;text-align: center;color:white;font-family: Avenir-Black;line-height: 30px;">
+                        Welcome To CooMo Travel
+                    </p>
+                    <div class="row m-2 mb-3">
+                        <div class="col-md-10 offset-1">
+                            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="d-block w-100" src="img/slider/1.png..." alt="First slide">
+                                    </div>
+                                        <div class="carousel-item">
+                                            <img class="d-block w-100" src="img/slider/4.png" alt="Second slide">
+                                        </div>
+                                </div>
+                                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                      </a>
+                                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                      </a>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4"></div>
+                                <div class="col-md-4"></div>
+                                <div class="col-md-4 text-right mt-3">
+                                   <a href=""><span class="" style="font-size: 20px; font-family: Avenir-Medium;color: white;">SKIP <img src="img/XMLID_15_.png" alt="" class="align-middle"></span>
+                                    </a>
+                                </div>
+                            </div>
+                         </div>
+                    </div>
+                            <p style="font-size: 13px; color: white;text-align: center;font-family: Avenir-Medium">Read our <a href="#" style="text-decoration: none;"><span style="font-family: Avenir-Black;font-size: 13px; color: white;">Privacy Policy</span></a> and <a href="#" style="text-decoration: none;"><span style="font-family: Avenir-Black;font-size: 13px; color: white;">Terms of Service</span></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- jQuery first, then Popper.js and Bootstrap JS. -->
+            <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+            <script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
+            <script src="js/jquery.scrollify.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/headjs/1.0.3/head.core.min.js"></script>
+            <script src="vendors/intl-tel-input/js/intlTelInput.min.js"></script>
+            <script>
+            var input = document.querySelector("#phone");
+            window.intlTelInput(input);
+            </script>
+            <script>
+            $(function() {
+                $('#grid').masonry({
+                    itemSelector: '.item',
+                    columnWidth: 5
+                });
+            });
+            $(window).resize(function() {
+                $(function() {
+                    $('#grid').masonry({
+                        itemSelector: '.item',
+                        columnWidth: 5
+                    });
+                });
+            });
+            </script>
+            <script>
+            $(function() {
+                $.scrollify({
+                    section: ".panel",
+                    sectionName: false,
+                    interstitialSection: ".footer"
+                });
+            });
+            </script>
+            <script>
+            /* JS */
+            if (head.screen.innerWidth < 800) {
+                document.getElementById("main-wrapper").style.display = "none";
+                document.getElementById("excuse").style.display = "block";
+            }
+            </script>
+            <script type="text/javascript">
+            $(window).on('load', function() { // makes sure the whole site is loaded 
+                $('#status').fadeOut(); // will first fade out the loading animation 
+                $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+                $('body').delay(350).css({ 'overflow': 'visible' });
+            })
+            </script>
+            <script>
+            $(document).ready(function() {
+                $(".get-started").mouseenter(function() {
+                    $(this).children('img').attr("src", "img/Symbol%202%20%E2%80%93%204.png");
+                });
+                $(".get-started").mouseleave(function() {
+                    $(this).children('img').attr("src", "img/XMLID_15_.png");
+                });
+            });
+            </script>
+            <script src="https://lib.arvancloud.com/ar/jReject/1.1.4/js/jquery.reject.js"></script>
+            <script>
+            // A $( document ).ready() block.
+            $(document).ready(function() {
+                $.reject({
+                    reject: {
+                        all: false,
+                        msie: 8
+                    }
+                }); // Customized Browsers  
+
+                return false;
+            });
+            </script>
+            <script>
+            $('.modal').on('show.bs.modal', function(e) {
+                $('.modal .modal-dialog').attr('class', 'modal-dialog  modal-dialog-centered zoomIn  animated modal-lg');
+            })
+            $('.modal').on('hide.bs.modal', function(e) {
+                $('.modal .modal-dialog').attr('class', 'modal-dialog  modal-dialog-centered  animated modal-lg');
+            })
+            </script>
+            <script>
+                $(document).ready(function(){
+
+                var counter = 1;
+                    
+                $("#addButton").click(function () {
+                            
+                if(counter>10){
+                        alert("Only 10 textboxes allow");
+                        return false;
+                }   
+                    
+                var newTextFieldDiv = $(document.createElement('div'))
+                     .attr("id", 'TextBoxDiv' + counter).attr("class","city-group");
+                            
+                newTextFieldDiv.after().html('<input type="text" name="textbox' + counter + 
+                      '" id="textbox' + counter + '" value="" class="form-control" Placeholder="Enter City">');
+                        
+                newTextBoxDiv.appendTo("#city-group");
+
+                            
+                counter++;
+                 });
+                });
+            </script>
+</body>
+
+</html>
