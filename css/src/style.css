@@ -533,10 +533,9 @@ input[type="file"] {
   border-radius: 100%;
   text-align: center;
   background-color: white;
-  margin-top: -10px;
-  background-image: url(img/Group%2082.png); }
+  margin-top: -10px; }
 
-/* line 52, _models.scss */
+/* line 51, _models.scss */
 .form-control {
   font-size: 16px !important;
   display: block;
@@ -556,7 +555,7 @@ input[type="file"] {
   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
   font-family: 'Avenir-Medium'; }
 
-/* line 71, _models.scss */
+/* line 70, _models.scss */
 .login-to-coomo {
   font-size: 30px;
   text-align: center;
@@ -564,50 +563,50 @@ input[type="file"] {
   font-family: 'Avenir-Medium';
   line-height: 30px; }
 
-/* line 78, _models.scss */
+/* line 77, _models.scss */
 .social-account {
   float: left;
   width: 33px; }
 
-/* line 82, _models.scss */
+/* line 81, _models.scss */
 .social-account-span {
   line-height: 2.1;
   font-size: 15px;
   font-family: ' Avenir-Medium';
   color: #707070; }
 
-/* line 88, _models.scss */
+/* line 87, _models.scss */
 .modal-footer {
   display: block;
   border-top: 0px solid #e9ecef !important; }
-  /* line 91, _models.scss */
+  /* line 90, _models.scss */
   .modal-footer p {
     font-size: 13px;
     color: white;
     text-align: center;
     font-family: 'Avenir-Medium'; }
-    /* line 96, _models.scss */
+    /* line 95, _models.scss */
     .modal-footer p a {
       text-decoration: none; }
-      /* line 98, _models.scss */
+      /* line 97, _models.scss */
       .modal-footer p a span {
         font-size: 13px;
         color: white;
         font-family: 'Avenir-Black'; }
 
-/* line 106, _models.scss */
+/* line 105, _models.scss */
 .need-an-account {
   font-size: 20px;
   color: white !important;
   font-family: Avenir-Medium;
   font-size: 20px;
   text-decoration: none; }
-  /* line 112, _models.scss */
+  /* line 111, _models.scss */
   .need-an-account a {
     color: white !important;
     text-decoration: none; }
 
-/* line 117, _models.scss */
+/* line 116, _models.scss */
 .sign-up-coomo {
   font-size: 30px;
   text-align: center;
@@ -615,26 +614,26 @@ input[type="file"] {
   font-family: Avenir-Medium;
   line-height: 30px; }
 
-/* line 124, _models.scss */
+/* line 123, _models.scss */
 .continue {
   font-size: 20px;
   font-family: Avenir-Medium;
   padding: .2rem 2.75rem; }
 
-/* line 129, _models.scss */
+/* line 128, _models.scss */
 .already-have-account {
   text-align: center !important;
   color: white;
   font-size: 14px;
   font-family: Avenir-Medium; }
-  /* line 134, _models.scss */
+  /* line 133, _models.scss */
   .already-have-account a {
     color: white;
     font-size: 14px;
     font-family: Avenir-Black;
     text-decoration: none; }
 
-/* line 141, _models.scss */
+/* line 140, _models.scss */
 .modal-title-paragraph {
   font-size: 25px;
   text-align: center;
@@ -642,7 +641,7 @@ input[type="file"] {
   font-family: Avenir-Light;
   line-height: 30px; }
 
-/* line 148, _models.scss */
+/* line 147, _models.scss */
 .city-expert {
   color: white;
   text-align: center;
