@@ -1,0 +1,153 @@
+.close {
+    border-radius: 100% !important;
+    width: 30px !important;
+    height: 30px !important;
+    opacity: 1 !important;
+    margin-left: 0px !important;
+    background-color: white !important;
+    span {
+        color: #5491E3;
+    }
+}
+.modal-header{
+    border: 0px !important;
+    .close{
+        padding: 0rem 0rem 0rem 0px;
+        margin: 0rem 0rem 0rem auto; 
+    }
+}
+.modal-content {
+        position: relative;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 100%;
+        pointer-events: auto;
+        background: #73afdc; /* Old browsers */
+        background: -moz-linear-gradient(45deg, #73afdc 0%, #73afdc 1%, #178ce5 45%, #178ce5 88%, #178ce5 88%, #1181d6 100%, #a7c7dc 100%, #1181d6 100%, #a7c7dc 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(45deg, #73afdc 0%,#73afdc 1%,#178ce5 45%,#178ce5 88%,#178ce5 88%,#1181d6 100%,#a7c7dc 100%,#1181d6 100%,#a7c7dc 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(45deg, #73afdc 0%,#73afdc 1%,#178ce5 45%,#178ce5 88%,#178ce5 88%,#1181d6 100%,#a7c7dc 100%,#1181d6 100%,#a7c7dc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73afdc', endColorstr='#a7c7dc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+        background-clip: padding-box;
+        border: 1px solid rgba(0,0,0,.2);
+        border-radius: .3rem;
+        outline: 0;
+}
+input[type="file"] {
+        display: none;
+}
+.custom-file-upload {
+        width: 80px;
+        height: 80px;
+        border: 1px solid #ccc;
+        display: inline-block;
+        cursor: pointer;
+        border-radius: 100%;
+        text-align: center;
+        background-color: white;
+        margin-top: -10px;
+        background-image: url(img/Group%2082.png);
+}
+.form-control {
+    font-size: 16px !important;
+    display: block;
+    width: 100%;
+    height: calc(2.25rem + 2px);
+    padding: 1rem 1rem;
+    font-size: 0.8125rem;
+    line-height: 1.5;
+    color: #707070;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    -webkit-transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+    font-family: 'Avenir-Medium';
+}
+.login-to-coomo{
+	font-size: 30px;
+	text-align: center;
+	color:white;
+	font-family: 'Avenir-Medium';
+	line-height: 30px;
+}
+.social-account{
+	float: left;
+	width: 29px;
+}
+.social-account-span{
+	line-height: 2.1;
+	font-size: 15px;
+	font-family:' Avenir-Medium';
+	color: #707070;
+}
+.modal-footer{
+	display: block;
+	border-top: 0px solid #e9ecef !important;
+	p{
+		font-size: 13px;
+		color: white;
+		text-align: center;
+		font-family: 'Avenir-Medium';
+		a{
+			text-decoration: none;
+			span{
+				font-size: 13px;
+				color: white;
+				font-family: 'Avenir-Black';
+			}
+		}
+	}
+}
+.need-an-account{
+	font-size: 20px;
+	color:white !important;
+	font-family: Avenir-Medium;
+	font-size: 20px;
+	text-decoration: none;
+	a{
+		color:white !important;
+		text-decoration: none;
+	}
+}
+.sign-up-coomo{
+	font-size: 30px;
+	text-align: center;
+	color:white;
+	font-family: Avenir-Medium;
+	line-height: 30px;
+}
+.continue{
+	font-size: 20px; 
+	font-family: Avenir-Medium;
+	padding: .2rem 2.75rem;
+}
+.already-have-account{
+	text-align: center !important;
+	color:white;
+	font-size: 14px;
+	font-family: Avenir-Medium;
+	a{
+		color:white;
+		font-size: 14px;
+		font-family: Avenir-Black;
+		text-decoration: none;
+	}
+}
+.modal-title-paragraph{
+	font-size: 25px;
+	text-align: center;
+	color:white;
+	font-family: Avenir-Light;
+	line-height: 30px;
+}
+.city-expert{
+	color: white;
+	text-align: center;
+	font-family: Avenir-Medium;
+	font-size: 13px;
+}

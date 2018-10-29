@@ -1,0 +1,656 @@
+/* line 1, _navbar.scss */
+.navbar {
+  -webkit-box-shadow: 0px 11px 16px -7px #b9b3bd;
+          box-shadow: 0px 11px 16px -7px #b9b3bd; }
+
+/* line 6, _navbar.scss */
+.navbar-brand a img {
+  width: 90%; }
+
+/* line 11, _navbar.scss */
+.plan-a-trip {
+  font-family: 'Avenir-Black';
+  font-size: 16px;
+  -webkit-box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.16); }
+
+/* line 18, _navbar.scss */
+.login {
+  font-size: 16px !important;
+  font-family: Avenir-Black !important;
+  padding-top: .8rem !important;
+  color: #1D85D5 !important; }
+
+/* line 24, _navbar.scss */
+.login:hover {
+  font-size: 16px !important;
+  font-family: Avenir-Black !important;
+  padding-top: .8rem !important;
+  color: #1D85D5 !important; }
+
+/* line 30, _navbar.scss */
+.btn-get-started {
+  font-family: Avenir-Medium;
+  font-size: 16px; }
+
+/* line 34, _navbar.scss */
+.btn {
+  border-radius: .15rem; }
+
+/* line 37, _navbar.scss */
+.btn-outline-light:hover {
+  color: #1D85D5; }
+
+/* line 40, _navbar.scss */
+.navbar-brand {
+  margin-right: 20px; }
+
+/* line 43, _navbar.scss */
+.bg-light {
+  background-color: #fff !important; }
+
+/* line 47, _navbar.scss */
+.btn-get-started {
+  margin-right: 10px !important; }
+
+/* line 50, _navbar.scss */
+.navbar-light .navbar-nav .nav-link {
+  color: #007bff; }
+
+/* line 1, _reset.scss */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.0;
+  color: #1D85D5;
+  background-color: #fff;
+  overflow-x: hidden !important; }
+
+/* line 11, _reset.scss */
+#excuse {
+  display: none; }
+
+/* line 1, _preloader.scss */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 99; }
+
+/* line 11, _preloader.scss */
+#status {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-image: url(../loader/loader-64x/Preloader_4.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: -100px 0 0 -100px; }
+
+/* line 2, _footer.scss */
+.custom-footer ul {
+  list-style: none; }
+
+/* line 8, _footer.scss */
+.custom-footer ul li {
+  display: inline;
+  padding: 0px 2%; }
+
+/* line 17, _footer.scss */
+.custom-footer ul li a {
+  text-decoration: none;
+  color: #707070;
+  font-family: avenir-medium; }
+
+/* line 28, _footer.scss */
+.custom-footer ul li a:hover {
+  text-decoration: none;
+  color: #1D85D5;
+  font-family: avenir-medium; }
+
+/* line 1, _section01.scss */
+.wrap {
+  overflow: hidden;
+  margin-right: -40px !important; }
+
+/* line 5, _section01.scss */
+.content_wrapper {
+  margin-top: 20vh; }
+
+/* line 8, _section01.scss */
+.paragraph-1 {
+  font-size: 30px;
+  color: #007bff;
+  font-family: 'Avenir-Black';
+  white-space: nowrap; }
+
+/* line 14, _section01.scss */
+.paragraph-2 {
+  font-size: 18px;
+  color: #707070;
+  line-height: 25px;
+  font-family: Avenir-Light;
+  white-space: nowrap; }
+
+/* line 21, _section01.scss */
+.get-started {
+  font-family: Avenir-Medium;
+  font-size: 18px;
+  -webkit-box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.16);
+  background-color: #1D85D5;
+  border: 2px solid #1D85D5; }
+
+/* line 30, _section01.scss */
+.get-started:hover {
+  font-family: Avenir-Medium;
+  font-size: 18px;
+  -webkit-box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.16);
+  background-color: transparent;
+  border: 2px solid #1D85D5;
+  color: #1D85D5; }
+
+/******* CSS for the images grid ********/
+/* line 41, _section01.scss */
+#grid {
+  height: calc(100vh - 70px) !important;
+  width: 680px;
+  float: right;
+  overflow: hidden; }
+
+/* line 48, _section01.scss */
+.item {
+  width: 190px;
+  height: 60px;
+  float: right;
+  margin: 5px;
+  border-radius: 4px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat; }
+
+/* line 58, _section01.scss */
+.item.h2 {
+  /*height: 465px;*/
+  height: 62.78%; }
+
+/* line 63, _section01.scss */
+.item.h3 {
+  /*height: 232px;*/
+  height: 31.39%; }
+
+/* line 68, _section01.scss */
+.item.h4 {
+  /*height: 67px;*/
+  height: 9.06%; }
+
+/* line 74, _section01.scss */
+.item.h5 {
+  /*height: 330px;*/
+  height: 44.65%;
+  width: 34px; }
+
+/* line 80, _section01.scss */
+.item.h6 {
+  /*height: 330px;*/
+  height: 44.65%; }
+
+/* line 85, _section01.scss */
+.item.h7 {
+  /*height: 275px;*/
+  height: 37.212%;
+  background-image: url(../img/941104_10151639697462822_2020897575_n-3-e1498074879180.png);
+  background-size: 100% 100%; }
+
+/* line 92, _section01.scss */
+.item.h8 {
+  /*height: 164px;*/
+  height: 22.19%;
+  background-image: url(../img/941104_10151639697462822_2020897575_n-3-e1498074879180.png);
+  background-size: 100% 100%; }
+
+/* line 99, _section01.scss */
+.item.h9 {
+  /*height: 67px;*/
+  height: 9.06%;
+  width: 34px;
+  background-image: url(../img/941104_10151639697462822_2020897575_n-3-e1498074879180.png); }
+
+/* line 106, _section01.scss */
+.moment-ha-long-img {
+  background-image: url(../img/moment-ha-long-bay%402x.png);
+  margin-top: -5px;
+  background-size: auto 100%; }
+
+/* line 111, _section01.scss */
+.fixedw-large-img {
+  background-image: url(../img/fixedw_large_4x.png); }
+
+/* line 114, _section01.scss */
+.img-title {
+  position: absolute;
+  top: 0;
+  background: black;
+  background: rgba(0, 0, 0, 0.3);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 10px;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  font-size: 14px;
+  font-family: 'Avenir Black';
+  line-height: 16px; }
+
+/* line 128, _section01.scss */
+.img-link {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 10px;
+  font-family: Avenir-Medium;
+  padding: 4px 7px;
+  background: #178CE5;
+  /* Fallback color */
+  background: #178CE5;
+  text-decoration: none;
+  border-radius: 3px;
+  color: white; }
+
+/* line 141, _section01.scss */
+.img-link:hover {
+  color: white;
+  text-decoration: none; }
+
+/* line 145, _section01.scss */
+.img-link > img {
+  width: 16%;
+  padding-bottom: 2px; }
+
+/* line 149, _section01.scss */
+.img-link-white {
+  position: absolute;
+  bottom: 25px;
+  right: 10px;
+  font-size: 10px;
+  font-family: Avenir-Medium;
+  padding: 4px 7px;
+  background: #fff;
+  color: #178CE5;
+  opacity: 05;
+  text-decoration: none;
+  border-radius: 3px; }
+
+/* line 162, _section01.scss */
+.img-link-white:hover {
+  color: #178CE5;
+  text-decoration: none; }
+
+/* line 166, _section01.scss */
+.img-link-white > img {
+  width: 18%;
+  padding-bottom: 2px; }
+
+/*Section 02*/
+/* line 171, _section01.scss */
+#section-two {
+  position: relative;
+  height: 100%; }
+
+/* line 175, _section01.scss */
+#section-two > img {
+  width: 50%; }
+
+/* line 178, _section01.scss */
+.detailed-img {
+  width: 81%; }
+
+@media only screen and (min-width: 1400px) {
+  /* line 182, _section01.scss */
+  #grid {
+    height: 95vh !important;
+    width: 1000px;
+    float: right;
+    /*padding: 5px;*/
+    overflow: hidden; }
+
+  /* line 189, _section01.scss */
+  .item {
+    width: 300px;
+    height: 60px;
+    float: right;
+    margin: 5px;
+    border-radius: 4px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat; }
+
+  /* line 198, _section01.scss */
+  .img-link-white {
+    position: absolute;
+    bottom: 60px;
+    right: 10px;
+    font-size: 10px;
+    font-family: Avenir-Medium;
+    padding: 4px 7px;
+    background: #fff;
+    color: #178CE5;
+    opacity: 05;
+    text-decoration: none;
+    border-radius: 3px; }
+
+  /* line 211, _section01.scss */
+  .paragraph-1 {
+    font-size: 35px;
+    color: #007bff;
+    font-family: 'Avenir LT Std 55 Roman';
+    white-space: nowrap; }
+
+  /* line 217, _section01.scss */
+  .paragraph-2 {
+    font-size: 21px;
+    color: #707070;
+    line-height: 27px;
+    font-family: Avenir-Light;
+    white-space: nowrap; }
+
+  /* line 224, _section01.scss */
+  .img-title {
+    position: absolute;
+    /* Position the background text */
+    top: 0;
+    /* At the bottom. Use top:0 to append it to the top */
+    background: black;
+    /* Fallback color */
+    background: rgba(0, 0, 0, 0.3);
+    /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    /* Grey text */
+    width: 100%;
+    /* Full width */
+    padding: 18px;
+    /* Some padding */
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    font-size: 14px;
+    font-family: 'Avenir Black'; }
+
+  /* line 237, _section01.scss */
+  .img-link {
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+    font-size: 15px;
+    font-family: Avenir-Medium;
+    padding: 7px 7px;
+    background: #178CE5;
+    /* Fallback color */
+    text-decoration: none;
+    border-radius: 3px;
+    color: white; }
+
+  /* line 249, _section01.scss */
+  .img-link > img {
+    width: 12%;
+    padding-bottom: 2px; }
+
+  /* line 253, _section01.scss */
+  .img-link-white {
+    position: absolute;
+    bottom: 55px;
+    right: 10px;
+    font-size: 15px;
+    font-family: Avenir-Medium;
+    padding: 7px 7px;
+    background: #fff;
+    color: #178CE5;
+    opacity: 05;
+    text-decoration: none;
+    border-radius: 3px; }
+
+  /* line 266, _section01.scss */
+  .img-link-white > img {
+    width: 12%;
+    padding-bottom: 2px; }
+
+  /* line 270, _section01.scss */
+  .img-title {
+    position: absolute;
+    top: 0;
+    background: black;
+    background: rgba(0, 0, 0, 0.3);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 18px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    font-size: 17px;
+    font-family: 'Avenir Black'; }
+
+  /* line 283, _section01.scss */
+  .item.h7 {
+    height: 275px;
+    height: 38.212%;
+    background-image: url(../img/941104_10151639697462822_2020897575_n-3-e1498074879180.png);
+    background-size: 100% 100%; } }
+/* line 1, _scrollbar.scss */
+body::-webkit-scrollbar {
+  width: 0.5em !important; }
+
+/* line 5, _scrollbar.scss */
+body::-webkit-scrollbar-track {
+  color: white;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+  width: 0.5em !important; }
+
+/* line 11, _scrollbar.scss */
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+  border-radius: 10px;
+  width: 0.5em !important; }
+
+/* line 1, _section02.scss */
+#section-two {
+  position: relative;
+  height: 100%; }
+
+/* line 5, _section02.scss */
+#section-two > img {
+  width: 50%; }
+
+/* line 8, _section02.scss */
+.section-2-para1 {
+  font-size: 30px;
+  font-family: Avenir-Black;
+  color: #007bff; }
+
+/* line 13, _section02.scss */
+.section-2-para2 {
+  font-size: 18px;
+  font-family: Avenir-Black;
+  color: #007bff; }
+
+/* line 18, _section02.scss */
+.detailed-img {
+  width: 81%; }
+
+/* line 1, _models.scss */
+.close {
+  border-radius: 100% !important;
+  width: 30px !important;
+  height: 30px !important;
+  opacity: 1 !important;
+  margin-left: 0px !important;
+  background-color: white !important; }
+  /* line 8, _models.scss */
+  .close span {
+    color: #5491E3; }
+
+/* line 12, _models.scss */
+.modal-header {
+  border: 0px !important; }
+  /* line 14, _models.scss */
+  .modal-header .close {
+    padding: 0rem 0rem 0rem 0px;
+    margin: 0rem 0rem 0rem auto; }
+
+/* line 19, _models.scss */
+.modal-content {
+  position: relative;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  width: 100%;
+  pointer-events: auto;
+  background: #73afdc;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #73afdc 0%, #73afdc 1%, #178ce5 45%, #178ce5 88%, #178ce5 88%, #1181d6 100%, #a7c7dc 100%, #1181d6 100%, #a7c7dc 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73afdc', endColorstr='#a7c7dc',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: .3rem;
+  outline: 0; }
+
+/* line 37, _models.scss */
+input[type="file"] {
+  display: none; }
+
+/* line 40, _models.scss */
+.custom-file-upload {
+  width: 80px;
+  height: 80px;
+  border: 1px solid #ccc;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 100%;
+  text-align: center;
+  background-color: white;
+  margin-top: -10px;
+  background-image: url(img/Group%2082.png); }
+
+/* line 52, _models.scss */
+.form-control {
+  font-size: 16px !important;
+  display: block;
+  width: 100%;
+  height: calc(2.25rem + 2px);
+  padding: 1rem 1rem;
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  color: #707070;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  -webkit-transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  font-family: 'Avenir-Medium'; }
+
+/* line 71, _models.scss */
+.login-to-coomo {
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  font-family: 'Avenir-Medium';
+  line-height: 30px; }
+
+/* line 78, _models.scss */
+.social-account {
+  float: left;
+  width: 29px; }
+
+/* line 82, _models.scss */
+.social-account-span {
+  line-height: 2.1;
+  font-size: 15px;
+  font-family: ' Avenir-Medium';
+  color: #707070; }
+
+/* line 88, _models.scss */
+.modal-footer {
+  display: block;
+  border-top: 0px solid #e9ecef !important; }
+  /* line 91, _models.scss */
+  .modal-footer p {
+    font-size: 13px;
+    color: white;
+    text-align: center;
+    font-family: 'Avenir-Medium'; }
+    /* line 96, _models.scss */
+    .modal-footer p a {
+      text-decoration: none; }
+      /* line 98, _models.scss */
+      .modal-footer p a span {
+        font-size: 13px;
+        color: white;
+        font-family: 'Avenir-Black'; }
+
+/* line 106, _models.scss */
+.need-an-account {
+  font-size: 20px;
+  color: white !important;
+  font-family: Avenir-Medium;
+  font-size: 20px;
+  text-decoration: none; }
+  /* line 112, _models.scss */
+  .need-an-account a {
+    color: white !important;
+    text-decoration: none; }
+
+/* line 117, _models.scss */
+.sign-up-coomo {
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  font-family: Avenir-Medium;
+  line-height: 30px; }
+
+/* line 124, _models.scss */
+.continue {
+  font-size: 20px;
+  font-family: Avenir-Medium;
+  padding: .2rem 2.75rem; }
+
+/* line 129, _models.scss */
+.already-have-account {
+  text-align: center !important;
+  color: white;
+  font-size: 14px;
+  font-family: Avenir-Medium; }
+  /* line 134, _models.scss */
+  .already-have-account a {
+    color: white;
+    font-size: 14px;
+    font-family: Avenir-Black;
+    text-decoration: none; }
+
+/* line 141, _models.scss */
+.modal-title-paragraph {
+  font-size: 25px;
+  text-align: center;
+  color: white;
+  font-family: Avenir-Light;
+  line-height: 30px; }
+
+/* line 148, _models.scss */
+.city-expert {
+  color: white;
+  text-align: center;
+  font-family: Avenir-Medium;
+  font-size: 13px; }

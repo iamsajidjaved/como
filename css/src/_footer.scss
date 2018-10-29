@@ -1,0 +1,35 @@
+.custom-footer{
+	ul{
+		list-style: none;
+	}
+}
+.custom-footer{
+	ul{
+		li{
+			display: inline;
+    		padding: 0px 2%;
+		}
+	}
+}
+.custom-footer{
+	ul{
+		li{
+			a{
+				text-decoration: none;
+    			color: #707070;
+    			font-family: avenir-medium;
+			}
+		}
+	}
+}
+.custom-footer{
+	ul{
+		li{
+			a:hover{
+				text-decoration: none;
+    			color: #1D85D5;
+   				font-family: avenir-medium;
+			}
+		}
+	}
+}

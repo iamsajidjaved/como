@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>CoomoTravel</title>
+    <title>Coomo Travel</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- Font Awesome -->
@@ -11,7 +11,7 @@
     <!-- Avenir fonts -->
     <link rel="stylesheet" href="fonts/fonts.css">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/landing_page.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- Reject CSS (Warning message on old browsers IE5, IE6 etc...) -->
     <link rel="stylesheet" href="https://lib.arvancloud.com/ar/jReject/1.1.4/css/jquery.reject.css">
     <!-- Animate CSS for animation -->
@@ -21,79 +21,6 @@
     <!--[if lt IE 9]>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
-    <style>
-        .close{
-            border-radius: 100% !important;
-            width: 30px !important;
-            height: 30px !important;
-            opacity: 1 !important;
-            margin-left: 0px !important;
-            background-color: white !important;
-        }
-        .close>span{
-            color: #5491E3;
-        }
-        .modal-header .close {
-            padding: 0rem 0rem 0rem 0px;
-             margin: 0rem 0rem 0rem auto; 
-        }
-        .modal-header {
-            border: 0px !important;
-        }
-        .modal-footer {
-            border: 0px !important;
-            display: block !important;
-        }
-        .modal-content {
-            position: relative;
-            display: -ms-flexbox;
-            display: flex;
-            -ms-flex-direction: column;
-            flex-direction: column;
-            width: 100%;
-            pointer-events: auto;
-            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#73afdc+0,73afdc+1,178ce5+45,178ce5+88,178ce5+88,1181d6+100,a7c7dc+100,1181d6+100,a7c7dc+100 */
-            background: #73afdc; /* Old browsers */
-            background: -moz-linear-gradient(45deg, #73afdc 0%, #73afdc 1%, #178ce5 45%, #178ce5 88%, #178ce5 88%, #1181d6 100%, #a7c7dc 100%, #1181d6 100%, #a7c7dc 100%); /* FF3.6-15 */
-            background: -webkit-linear-gradient(45deg, #73afdc 0%,#73afdc 1%,#178ce5 45%,#178ce5 88%,#178ce5 88%,#1181d6 100%,#a7c7dc 100%,#1181d6 100%,#a7c7dc 100%); /* Chrome10-25,Safari5.1-6 */
-            background: linear-gradient(45deg, #73afdc 0%,#73afdc 1%,#178ce5 45%,#178ce5 88%,#178ce5 88%,#1181d6 100%,#a7c7dc 100%,#1181d6 100%,#a7c7dc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73afdc', endColorstr='#a7c7dc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-                        background-clip: padding-box;
-                        border: 1px solid rgba(0,0,0,.2);
-                        border-radius: .3rem;
-                        outline: 0;
-        }
-        input[type="file"] {
-        display: none;
-        }
-        .custom-file-upload {
-            width: 80px;
-            height: 80px;
-            border: 1px solid #ccc;
-            display: inline-block;
-            cursor: pointer;
-            border-radius: 100%;
-            text-align: center;
-            background-color: white;
-            margin-top: -10px;
-            background-image: url(img/Group%2082.png);
-        }
-        .form-control {
-            display: block;
-            width: 100%;
-            height: calc(2.25rem + 2px);
-            padding: 0.375rem 0.75rem;
-            font-size: 0.8125rem;
-            line-height: 1.5;
-            color: #707070;
-            background-color: #fff;
-            background-clip: padding-box;
-            border: 1px solid #ced4da;
-            border-radius: .25rem;
-            transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-            font-family: Avenir-Medium;
-        }
-            </style>
 </head>
 
 <body>
@@ -232,40 +159,39 @@ background: linear-gradient(to bottom, #EFEFEF, #FFFFFF); /* W3C, IE 10+/ Edge, 
                     </button>
                 </div>
                 <div class="modal-body">
-                    <p style="font-size: 30px;text-align: center;color:white;font-family: Avenir-Light;line-height: 30px;">
+                    <p class="login-to-coomo">
                         Login to CooMo
                     </p>
                     <div class="row mt-5">
                         <div class="col-md-6 offset-3">
                             <button type="button" class="btn btn-light btn-block">
-                                <img src="img/RnOg6UyU_400x400.png" alt="" class="ml-2" style="float: left;width: 29px;;">
-                                <span style="line-height: 2.1;font-size: 15px; font-family: Avenir-Medium;color: #707070;">Sign in with Google</span>
+                                <img src="img/RnOg6UyU_400x400.png" alt="" class="ml-2 social-account">
+                                <span class="social-account-span">Sign in with Google</span>
                             </button>
-                            <button type="button" class="btn btn-light btn-block" style="">
-                                <img src="img/fb_icon_325x325.png" alt="" class="ml-2" style="float: left;width: 31px;">
-                                <span style="line-height: 2.1;font-size: 15px; font-family: Avenir-Medium;color: #707070;">Sign in with Facebook</span>
+                            <button type="button" class="btn btn-light btn-block">
+                                <img src="img/fb_icon_325x325.png" alt="" class="ml-2 social-account">
+                                <span class="social-account-span">Sign in with Facebook</span>
                             </button>
-                            <button type="button" class="btn btn-light btn-block" style="">
-                                <img src="img/twitter_512.png" alt="" class="ml-2" style="float: left;width: 31px;">
-                                <span style="line-height: 2.1;font-size: 15px; font-family: Avenir-Medium;color: #707070;color: #707070;">Sign in with Twitter</span>
+                            <button type="button" class="btn btn-light btn-block">
+                                <img src="img/twitter_512.png" alt="" class="ml-2 social-account">
+                                <span class="social-account-span">Sign in with Twitter</span>
                             </button>
-                            <button type="button" class="btn btn-light btn-block" style="">
-                                <img src="img/Group%2074.png" alt="" class="ml-2" style="float: left;width: 31px;">
-                                <span style="line-height: 2.1;font-size: 15px; font-family: Avenir-Medium;color: #707070;">Sign in with Email</span>
+                            <button type="button" class="btn btn-light btn-block">
+                                <img src="img/Group%2074.png" alt="" class="ml-2 social-account">
+                                <span class="social-account-span">Sign in with Email</span>
                             </button>
                         </div>
                     </div>
-                    <p class="mt-5" style="text-align: center !important;">
-                        <a href="javascript;" style="font-size: 20px;color:white;font-family: Avenir-Medium;font-size: 20px;text-decoration: none;" data-toggle="modal" data-target="#social02" data-dismiss="modal">Need an Account - Sign Up!</a>
+                    <p class="mt-5 need-an-account" style="text-align: center !important;">
+                        <a href="javascript;" style="" data-toggle="modal" data-target="#social02" data-dismiss="modal">Need an Account - Sign Up!</a>
                     </p>
                 </div>
                 <div class="modal-footer">
-                    <p style="font-size: 13px; color: white;text-align: center;font-family: Avenir-Medium">Read our <a href="#" style="text-decoration: none;"><span style="font-family: Avenir-Black;font-size: 13px; color: white;">Privacy Policy</span></a> and <a href="#" style="text-decoration: none;"><span style="font-family: Avenir-Black;font-size: 13px; color: white;">Terms of Service</span></a></p>
+                    <p style="">Read our <a href="#" style=""><span style="">Privacy Policy</span></a> and <a href="#" style=""><span style="">Terms of Service</span></a></p>
                 </div>
             </div>
         </div>
     </div>
-    <!-- 1. Social Media Signup -->
     <!-- 2. Social Media Login -->
     <div class="modal" id="social02" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
@@ -277,7 +203,7 @@ background: linear-gradient(to bottom, #EFEFEF, #FFFFFF); /* W3C, IE 10+/ Edge, 
                     </button>
                 </div>
                 <div class="modal-body">
-                    <p style="font-size: 30px;text-align: center;color:white;font-family: Avenir-Light;line-height: 30px;">
+                    <p class="sign-up-coomo">
                         Sign Up to CooMo
                     </p>
                     <div class="row mt-5">
@@ -293,17 +219,17 @@ background: linear-gradient(to bottom, #EFEFEF, #FFFFFF); /* W3C, IE 10+/ Edge, 
                                     <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Confirm Password">
                                 </div>
                                 <div class="form-group text-center m-3">
-                                    <button class="btn btn-outline-light" style="font-size: 20px; font-family: Avenir-Medium;padding: .2rem 2.75rem;" data-toggle="modal" data-target="#social03" data-dismiss="modal">Continue &nbsp; <!-- <img src="img/XMLID_15_.png" alt=""> --></button>
+                                    <button class="btn btn-outline-light continue" style="" data-toggle="modal" data-target="#social03" data-dismiss="modal">Continue &nbsp; <!-- <img src="img/XMLID_15_.png" alt=""> --></button>
                                 </div>
                             </form>
                         </div>
                     </div>
-                    <p style="text-align: center !important;color:white;font-size: 14px;font-family: Avenir-Medium;">
-                        Already have an Account? <a href="javascript;" style="color:white;font-size: 14px;font-family: Avenir-Black;text-decoration: none;" data-toggle="modal" data-target="#social-login" data-dismiss="modal">Log In</a>
+                    <p style="" class="already-have-account mt-2">
+                        Already have an Account? <a href="javascript;" style="" data-toggle="modal" data-target="#social-login" data-dismiss="modal">Log In</a>
                     </p>
                 </div>
                 <div class="modal-footer">
-                    <p style="font-size: 13px; color: white;text-align: center;font-family: Avenir-Medium">Read our <a href="#" style="text-decoration: none;"><span style="font-family: Avenir-Black;font-size: 13px; color: white;">Privacy Policy</span></a> and <a href="#" style="text-decoration: none;"><span style="font-family: Avenir-Black;font-size: 13px; color: white;">Terms of Service</span></a></p>
+                    <p style="">Read our <a href="#" ><span >Privacy Policy</span></a> and <a href="#" ><span >Terms of Service</span></a></p>
                 </div>
             </div>
         </div>
@@ -313,7 +239,7 @@ background: linear-gradient(to bottom, #EFEFEF, #FFFFFF); /* W3C, IE 10+/ Edge, 
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <p class="modal-title" id="exampleModalLabel" style="font-size: 25px;text-align: center;color:white;font-family: Avenir-Light;line-height: 30px;">For 5 CooMo Points, Tell Us More About Yourself</p>
+                    <p class="modal-title modal-title-paragraph" id="exampleModalLabel" style="">For 5 CooMo Points, Tell Us More About Yourself</p>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -349,7 +275,7 @@ background: linear-gradient(to bottom, #EFEFEF, #FFFFFF); /* W3C, IE 10+/ Edge, 
                                 </div>
                                 <div class="row">
                                     <div class="col-md-6 text-center">
-                                        <p style="color: white; text-align: center;font-family: Avenir-Medium;font-size: 13px;">I'd consider myself a city expert on:</p>
+                                        <p style="" class="city-expert">I'd consider myself a city expert on:</p>
                                     </div>
                                     <div class="col-md-6" style="padding-left: 5px;">
                                     <div id="city-group">
@@ -376,7 +302,9 @@ background: linear-gradient(to bottom, #EFEFEF, #FFFFFF); /* W3C, IE 10+/ Edge, 
                         </div>
                         <div class="col-md-3"></div>
                     </div>
-                    <p style="font-size: 13px; color: white;text-align: center;font-family: Avenir-Medium">Read our <a href="#" style="text-decoration: none;"><span style="font-family: Avenir-Black;font-size: 13px; color: white;">Privacy Policy</span></a> and <a href="#" style="text-decoration: none;"><span style="font-family: Avenir-Black;font-size: 13px; color: white;">Terms of Service</span></a></p>
+                    <div class="modal-footer">
+                    <p style="">Read our <a href="#" ><span >Privacy Policy</span></a> and <a href="#" ><span >Terms of Service</span></a></p>
+                </div>
                 </div>
             </div>
         </div>
@@ -407,7 +335,9 @@ background: linear-gradient(to bottom, #EFEFEF, #FFFFFF); /* W3C, IE 10+/ Edge, 
                             </form>
                         </div>
                     </div>
-                    <p style="font-size: 13px; color: white;text-align: center;font-family: Avenir-Medium">Read our <a href="#" style="text-decoration: none;"><span style="font-family: Avenir-Black;font-size: 13px; color: white;">Privacy Policy</span></a> and <a href="#" style="text-decoration: none;"><span style="font-family: Avenir-Black;font-size: 13px; color: white;">Terms of Service</span></a></p>
+                    <div class="modal-footer">
+                    <p style="">Read our <a href="#" ><span >Privacy Policy</span></a> and <a href="#" ><span >Terms of Service</span></a></p>
+                </div>
                 </div>
             </div>
         </div>
@@ -440,7 +370,9 @@ background: linear-gradient(to bottom, #EFEFEF, #FFFFFF); /* W3C, IE 10+/ Edge, 
                             </form>
                         </div>
                     </div>
-                    <p style="font-size: 13px; color: white;text-align: center;font-family: Avenir-Medium">Read our <a href="#" style="text-decoration: none;"><span style="font-family: Avenir-Black;font-size: 13px; color: white;">Privacy Policy</span></a> and <a href="#" style="text-decoration: none;"><span style="font-family: Avenir-Black;font-size: 13px; color: white;">Terms of Service</span></a></p>
+                    <div class="modal-footer">
+                    <p style="">Read our <a href="#" ><span >Privacy Policy</span></a> and <a href="#" ><span >Terms of Service</span></a></p>
+                </div>
                 </div>
             </div>
         </div>
@@ -483,13 +415,14 @@ background: linear-gradient(to bottom, #EFEFEF, #FFFFFF); /* W3C, IE 10+/ Edge, 
                                 <div class="col-md-4"></div>
                                 <div class="col-md-4"></div>
                                 <div class="col-md-4 text-right mt-3">
-                                   <a href=""><span class="" style="font-size: 20px; font-family: Avenir-Medium;color: white;">SKIP <img src="img/XMLID_15_.png" alt="" class="align-middle"></span>
+                                   <a href="#" style="text-decoration: none;"><span class="" style="font-size: 20px; font-family: Avenir-Medium;color: white;">SKIP <img src="img/XMLID_15_.png" alt="" class="align-middle"></span>
                                     </a>
                                 </div>
                             </div>
                          </div>
-                    </div>
-                            <p style="font-size: 13px; color: white;text-align: center;font-family: Avenir-Medium">Read our <a href="#" style="text-decoration: none;"><span style="font-family: Avenir-Black;font-size: 13px; color: white;">Privacy Policy</span></a> and <a href="#" style="text-decoration: none;"><span style="font-family: Avenir-Black;font-size: 13px; color: white;">Terms of Service</span></a></p>
+                    </div><div class="modal-footer">
+                            <p style="">Read our <a href="#" ><span >Privacy Policy</span></a> and <a href="#" ><span >Terms of Service</span></a></p>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -568,14 +501,6 @@ background: linear-gradient(to bottom, #EFEFEF, #FFFFFF); /* W3C, IE 10+/ Edge, 
 
                 return false;
             });
-            </script>
-            <script>
-            $('.modal').on('show.bs.modal', function(e) {
-                $('.modal .modal-dialog').attr('class', 'modal-dialog  modal-dialog-centered zoomIn  animated modal-lg');
-            })
-            $('.modal').on('hide.bs.modal', function(e) {
-                $('.modal .modal-dialog').attr('class', 'modal-dialog  modal-dialog-centered  animated modal-lg');
-            })
             </script>
             <script>
                 $(document).ready(function(){
