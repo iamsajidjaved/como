@@ -8,7 +8,7 @@
 .paragraph-1{
 	font-size: 30px;
 	color:  #007bff;
-	font-family: 'Avenir-Black';
+	font-family: 'Avenir-heavy';
 	white-space: nowrap;
 }
 .paragraph-2{
@@ -19,8 +19,8 @@
 	white-space: nowrap;
 }
 .get-started{
-	font-family: Avenir-Medium;
-	font-size: 18px;
+	font-family: 'Avenir-Black';
+	font-size: 16px;
 	-webkit-box-shadow: 0px 5px 6px 0px rgba(0,0,0,0.16);
 	-moz-box-shadow: 0px 5px 6px 0px rgba(0,0,0,0.16);
 	box-shadow: 0px 5px 6px 0px rgba(0,0,0,0.16);
@@ -28,8 +28,8 @@
 	border: 2px solid #1D85D5;
 }
 .get-started:hover{
-	font-family: Avenir-Medium;
-	font-size: 18px;
+	font-family: 'Avenir-Black';
+	font-size: 16px;
 	-webkit-box-shadow: 0px 5px 6px 0px rgba(0,0,0,0.16);
 	-moz-box-shadow: 0px 5px 6px 0px rgba(0,0,0,0.16);
 	box-shadow: 0px 5px 6px 0px rgba(0,0,0,0.16);
@@ -114,8 +114,6 @@
 .img-title{
 	     position: absolute;
 	    top: 0;
-	    background: rgb(0, 0, 0);
-	    background: rgba(0, 0, 0, 0.3);
 	    color: #f1f1f1;
 	    width: 100%;
 	    padding: 10px;
@@ -129,7 +127,7 @@
 	position: absolute;
 	bottom: 10px;
 	right: 10px;
-	font-size: 10px;
+	font-size: 12px;
 	font-family:Avenir-Medium; 
 	padding: 4px 7px;
 	background: #178CE5; /* Fallback color */
@@ -150,7 +148,7 @@
 	position: absolute;
 	bottom: 25px;
 	right: 10px;
-	font-size: 10px;
+	font-size: 12px;
 	font-family:Avenir-Medium; 
 	padding: 4px 7px;
 	background: #fff;
@@ -224,8 +222,6 @@
 .img-title{
 	 position: absolute; /* Position the background text */
 	 top: 0; /* At the bottom. Use top:0 to append it to the top */
-	 background: rgb(0, 0, 0); /* Fallback color */
-	 background: rgba(0, 0, 0, 0.3); /* Black background with 0.5 opacity */
 	 color: #f1f1f1; /* Grey text */
 	 width: 100%; /* Full width */
 	 padding: 18px; /* Some padding */

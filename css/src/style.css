@@ -30,7 +30,7 @@
 
 /* line 30, _navbar.scss */
 .btn-get-started {
-  font-family: Avenir-Medium;
+  font-family: 'Avenir-Black';
   font-size: 16px; }
 
 /* line 34, _navbar.scss */
@@ -128,7 +128,7 @@ body {
 .paragraph-1 {
   font-size: 30px;
   color: #007bff;
-  font-family: 'Avenir-Black';
+  font-family: 'Avenir-heavy';
   white-space: nowrap; }
 
 /* line 14, _section01.scss */
@@ -141,8 +141,8 @@ body {
 
 /* line 21, _section01.scss */
 .get-started {
-  font-family: Avenir-Medium;
-  font-size: 18px;
+  font-family: 'Avenir-Black';
+  font-size: 16px;
   -webkit-box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.16);
   box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.16);
   background-color: #1D85D5;
@@ -150,8 +150,8 @@ body {
 
 /* line 30, _section01.scss */
 .get-started:hover {
-  font-family: Avenir-Medium;
-  font-size: 18px;
+  font-family: 'Avenir-Black';
+  font-size: 16px;
   -webkit-box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.16);
   box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.16);
   background-color: transparent;
@@ -237,8 +237,6 @@ body {
 .img-title {
   position: absolute;
   top: 0;
-  background: black;
-  background: rgba(0, 0, 0, 0.3);
   color: #f1f1f1;
   width: 100%;
   padding: 10px;
@@ -248,12 +246,12 @@ body {
   font-family: 'Avenir Black';
   line-height: 16px; }
 
-/* line 128, _section01.scss */
+/* line 126, _section01.scss */
 .img-link {
   position: absolute;
   bottom: 10px;
   right: 10px;
-  font-size: 10px;
+  font-size: 12px;
   font-family: Avenir-Medium;
   padding: 4px 7px;
   background: #178CE5;
@@ -263,22 +261,22 @@ body {
   border-radius: 3px;
   color: white; }
 
-/* line 141, _section01.scss */
+/* line 139, _section01.scss */
 .img-link:hover {
   color: white;
   text-decoration: none; }
 
-/* line 145, _section01.scss */
+/* line 143, _section01.scss */
 .img-link > img {
   width: 16%;
   padding-bottom: 2px; }
 
-/* line 149, _section01.scss */
+/* line 147, _section01.scss */
 .img-link-white {
   position: absolute;
   bottom: 25px;
   right: 10px;
-  font-size: 10px;
+  font-size: 12px;
   font-family: Avenir-Medium;
   padding: 4px 7px;
   background: #fff;
@@ -287,32 +285,32 @@ body {
   text-decoration: none;
   border-radius: 3px; }
 
-/* line 162, _section01.scss */
+/* line 160, _section01.scss */
 .img-link-white:hover {
   color: #178CE5;
   text-decoration: none; }
 
-/* line 166, _section01.scss */
+/* line 164, _section01.scss */
 .img-link-white > img {
   width: 18%;
   padding-bottom: 2px; }
 
 /*Section 02*/
-/* line 171, _section01.scss */
+/* line 169, _section01.scss */
 #section-two {
   position: relative;
   height: 100%; }
 
-/* line 175, _section01.scss */
+/* line 173, _section01.scss */
 #section-two > img {
   width: 50%; }
 
-/* line 178, _section01.scss */
+/* line 176, _section01.scss */
 .detailed-img {
   width: 81%; }
 
 @media only screen and (min-width: 1400px) {
-  /* line 182, _section01.scss */
+  /* line 180, _section01.scss */
   #grid {
     height: 95vh !important;
     width: 1000px;
@@ -320,7 +318,7 @@ body {
     /*padding: 5px;*/
     overflow: hidden; }
 
-  /* line 189, _section01.scss */
+  /* line 187, _section01.scss */
   .item {
     width: 300px;
     height: 60px;
@@ -330,7 +328,7 @@ body {
     background-size: 100% 100%;
     background-repeat: no-repeat; }
 
-  /* line 198, _section01.scss */
+  /* line 196, _section01.scss */
   .img-link-white {
     position: absolute;
     bottom: 60px;
@@ -344,14 +342,14 @@ body {
     text-decoration: none;
     border-radius: 3px; }
 
-  /* line 211, _section01.scss */
+  /* line 209, _section01.scss */
   .paragraph-1 {
     font-size: 35px;
     color: #007bff;
     font-family: 'Avenir LT Std 55 Roman';
     white-space: nowrap; }
 
-  /* line 217, _section01.scss */
+  /* line 215, _section01.scss */
   .paragraph-2 {
     font-size: 21px;
     color: #707070;
@@ -359,16 +357,12 @@ body {
     font-family: Avenir-Light;
     white-space: nowrap; }
 
-  /* line 224, _section01.scss */
+  /* line 222, _section01.scss */
   .img-title {
     position: absolute;
     /* Position the background text */
     top: 0;
     /* At the bottom. Use top:0 to append it to the top */
-    background: black;
-    /* Fallback color */
-    background: rgba(0, 0, 0, 0.3);
-    /* Black background with 0.5 opacity */
     color: #f1f1f1;
     /* Grey text */
     width: 100%;
@@ -380,7 +374,7 @@ body {
     font-size: 14px;
     font-family: 'Avenir Black'; }
 
-  /* line 237, _section01.scss */
+  /* line 233, _section01.scss */
   .img-link {
     position: absolute;
     bottom: 20px;
@@ -394,12 +388,12 @@ body {
     border-radius: 3px;
     color: white; }
 
-  /* line 249, _section01.scss */
+  /* line 245, _section01.scss */
   .img-link > img {
     width: 12%;
     padding-bottom: 2px; }
 
-  /* line 253, _section01.scss */
+  /* line 249, _section01.scss */
   .img-link-white {
     position: absolute;
     bottom: 55px;
@@ -413,12 +407,12 @@ body {
     text-decoration: none;
     border-radius: 3px; }
 
-  /* line 266, _section01.scss */
+  /* line 262, _section01.scss */
   .img-link-white > img {
     width: 12%;
     padding-bottom: 2px; }
 
-  /* line 270, _section01.scss */
+  /* line 266, _section01.scss */
   .img-title {
     position: absolute;
     top: 0;
@@ -432,7 +426,7 @@ body {
     font-size: 17px;
     font-family: 'Avenir Black'; }
 
-  /* line 283, _section01.scss */
+  /* line 279, _section01.scss */
   .item.h7 {
     height: 275px;
     height: 38.212%;
