@@ -23,7 +23,7 @@
     <![endif]-->
 </head>
 
-<body>
+<body onselectstart="return false;" ondragstart="return false;">
     <!-- Preloader -->
     <div id="preloader">
         <div id="status">&nbsp;</div>
@@ -121,14 +121,14 @@ background: linear-gradient(to bottom, #EFEFEF, #FFFFFF); /* W3C, IE 10+/ Edge, 
 ">
             <div class="row" id="section-two">
                 <div class="col-md-10 offset-2 text-center d-flex flex-wrap align-items-center">
-                    <img src="img/Group%20137.png" alt="" class="detailed-img">
+                    <img src="img/Group%20137.png" alt="" class="detailed-img" draggable="false">
         </div>
                 </div>
         </section>
         <section class="panel d-flex align-items-end" style="background-color:#1D85D5  !important;">
             <div class="section-three" style="width: 100%;">
                     <div class="">
-                        <center><img src="img/Group%20138.png" alt="" width="70%" class=""></center>
+                        <center><img src="img/Group%20138.png" alt="" width="70%" class=""draggable="false" ></center>
                      </div>
                 </div>
         </section>
@@ -169,15 +169,15 @@ background: linear-gradient(to bottom, #EFEFEF, #FFFFFF); /* W3C, IE 10+/ Edge, 
                                 <span class="social-account-span">Sign in with Google</span>
                             </button>
                             <button type="button" class="btn btn-light btn-block">
-                                <img src="img/facebook.svg" alt="" class="ml-2 social-account">
+                                <img src="img/fb_icon_325x325.png" alt="" class="ml-2 social-account">
                                 <span class="social-account-span">Sign in with Facebook</span>
                             </button>
                             <button type="button" class="btn btn-light btn-block">
-                                <img src="img/twitter.svg" alt="" class="ml-2 social-account">
+                                <img src="img/twitter_512.png" alt="" class="ml-2 social-account">
                                 <span class="social-account-span">Sign in with Twitter</span>
                             </button>
                             <button type="button" class="btn btn-light btn-block">
-                                <img src="img/envelope.svg" alt="" class="ml-2 social-account">
+                                <img src="img/Artboard 20.svg" alt="" class="ml-2 social-account" style="padding-top: 4px;">
                                 <span class="social-account-span">Sign in with Email</span>
                             </button>
                         </div>
@@ -396,7 +396,7 @@ background: linear-gradient(to bottom, #EFEFEF, #FFFFFF); /* W3C, IE 10+/ Edge, 
                         Welcome To CooMo Travel
                     </p>
                     <div class="row m-2 mb-3">
-                        <div class="col-md-10 offset-1">
+<!--                         <div class="col-md-10 offset-1">
                             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
@@ -423,7 +423,7 @@ background: linear-gradient(to bottom, #EFEFEF, #FFFFFF); /* W3C, IE 10+/ Edge, 
                                     </a>
                                 </div>
                             </div>
-                         </div>
+                         </div> -->
                     </div><div class="modal-footer">
                             <p style="">Read our <a href="#" ><span >Privacy Policy</span></a> and <a href="#" ><span >Terms of Service</span></a></p>
                         </div>
@@ -530,6 +530,9 @@ background: linear-gradient(to bottom, #EFEFEF, #FFFFFF); /* W3C, IE 10+/ Edge, 
                 counter++;
                  });
                 });
+            </script>
+            <script>
+                document.addEventListener('contextmenu', event => event.preventDefault());
             </script>
 </body>
 

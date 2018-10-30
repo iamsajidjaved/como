@@ -66,9 +66,21 @@ body {
   line-height: 1.0;
   color: #1D85D5;
   background-color: #fff;
-  overflow-x: hidden !important; }
+  overflow-x: hidden !important;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none; }
 
-/* line 11, _reset.scss */
+/* line 21, _reset.scss */
 #excuse {
   display: none; }
 
@@ -476,23 +488,14 @@ body::-webkit-scrollbar-thumb {
 
 /* line 1, _models.scss */
 .close {
-  border-radius: 100% !important;
-  width: 30px !important;
-  height: 30px !important;
-  opacity: 1 !important;
-  margin-left: 0px !important;
-  background-color: white !important; }
+  opacity: 1 !important; }
   /* line 8, _models.scss */
   .close span {
-    color: #5491E3; }
+    color: white; }
 
 /* line 12, _models.scss */
 .modal-header {
   border: 0px !important; }
-  /* line 14, _models.scss */
-  .modal-header .close {
-    padding: 0rem 0rem 0rem 0px;
-    margin: 0rem 0rem 0rem auto; }
 
 /* line 19, _models.scss */
 .modal-content {
@@ -533,9 +536,9 @@ input[type="file"] {
   border-radius: 100%;
   text-align: center;
   background-color: white;
-  margin-top: -10px;}
+  margin-top: -10px; }
 
-/* line 52, _models.scss */
+/* line 51, _models.scss */
 .form-control {
   font-size: 16px !important;
   display: block;
@@ -555,7 +558,7 @@ input[type="file"] {
   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
   font-family: 'Avenir-Medium'; }
 
-/* line 71, _models.scss */
+/* line 70, _models.scss */
 .login-to-coomo {
   font-size: 30px;
   text-align: center;
@@ -563,10 +566,11 @@ input[type="file"] {
   font-family: 'Avenir-Medium';
   line-height: 30px; }
 
-/* line 78, _models.scss */
+/* line 77, _models.scss */
 .social-account {
   float: left;
-  width: 33px; }
+  width: 33px;
+  padding-top: 4px; }
 
 /* line 82, _models.scss */
 .social-account-span {
@@ -647,3 +651,8 @@ input[type="file"] {
   text-align: center;
   font-family: Avenir-Medium;
   font-size: 13px; }
+
+/* line 154, _models.scss */
+.ml-2, .mx-2 {
+  margin-left: .5rem !important;
+  padding-top: 4px; }
