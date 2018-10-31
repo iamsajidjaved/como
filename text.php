@@ -1,1 +1,0 @@
-<?php include 'partials/How-To-Plan-A-Trip-_1_.html';?>

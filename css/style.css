@@ -1,7 +1,6 @@
 /* line 1, _navbar.scss */
 .navbar {
-  -webkit-box-shadow: 0px 11px 16px -7px #b9b3bd;
-          box-shadow: 0px 11px 16px -7px #b9b3bd; }
+  box-shadow: 0px 11px 16px -7px #b9b3bd; }
 
 /* line 6, _navbar.scss */
 .navbar-brand a img {
@@ -12,6 +11,7 @@
   font-family: 'Avenir-Black';
   font-size: 16px;
   -webkit-box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.16);
   box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.16); }
 
 /* line 18, _navbar.scss */
@@ -144,6 +144,7 @@ body {
   font-family: 'Avenir-Black';
   font-size: 16px;
   -webkit-box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.16);
   box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.16);
   background-color: #1D85D5;
   border: 1px solid #1D85D5; }
@@ -153,9 +154,10 @@ body {
   font-family: 'Avenir-Black';
   font-size: 16px;
   -webkit-box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.16);
+  -moz-box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.16);
   box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.16);
   background-color: transparent;
-  border: 2px solid #1D85D5;
+  border: 1px solid #1D85D5;
   color: #1D85D5; }
 
 /******* CSS for the images grid ********/
@@ -489,17 +491,16 @@ body::-webkit-scrollbar-thumb {
 .modal-content {
   position: relative;
   display: -ms-flexbox;
-  display: -webkit-box;
   display: flex;
   -ms-flex-direction: column;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
+  flex-direction: column;
   width: 100%;
   pointer-events: auto;
   background: #73afdc;
   /* Old browsers */
+  background: -moz-linear-gradient(45deg, #73afdc 0%, #73afdc 1%, #178ce5 45%, #178ce5 88%, #178ce5 88%, #1181d6 100%, #a7c7dc 100%, #1181d6 100%, #a7c7dc 100%);
   /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #73afdc 0%, #73afdc 1%, #178ce5 45%, #178ce5 88%, #178ce5 88%, #1181d6 100%, #a7c7dc 100%, #1181d6 100%, #a7c7dc 100%);
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(45deg, #73afdc 0%, #73afdc 1%, #178ce5 45%, #178ce5 88%, #178ce5 88%, #1181d6 100%, #a7c7dc 100%, #1181d6 100%, #a7c7dc 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
