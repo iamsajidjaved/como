@@ -66,21 +66,9 @@ body {
   line-height: 1.0;
   color: #1D85D5;
   background-color: #fff;
-  overflow-x: hidden !important;
-  -webkit-touch-callout: none;
-  /* iOS Safari */
-  -webkit-user-select: none;
-  /* Safari */
-  /* Konqueror HTML */
-  -moz-user-select: none;
-  /* Firefox */
-  -ms-user-select: none;
-  /* Internet Explorer/Edge */
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-drag: none; }
+  overflow-x: hidden !important; }
 
-/* line 21, _reset.scss */
+/* line 11, _reset.scss */
 #excuse {
   display: none; }
 
@@ -158,7 +146,7 @@ body {
   -webkit-box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.16);
   box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.16);
   background-color: #1D85D5;
-  border: 2px solid #1D85D5; }
+  border: 1px solid #1D85D5; }
 
 /* line 30, _section01.scss */
 .get-started:hover {
