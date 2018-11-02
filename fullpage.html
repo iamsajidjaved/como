@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<div id="fullpage">
+    <div class="section">One</div>
+    <div class="section">
+        Two
+    </div>
+    <div class="section">Three</div>
+    <div class="section">Four</div>
+</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://rawgit.com/alvarotrigo/fullPage.js/dev/src/fullpage.js"></script>
+	<script>
+new fullpage('#fullpage', {
+  sectionsColor: ['yellow', 'orange', '#C0C0C0', '#ADD8E6'],
+  autoScrolling: false
+});
+	</script>
+</body>
+</html>
